@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <style> 
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .karts{
+            width: 220px;
+            margin: 10px;
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        .karts-image{
+            height: 200px;
+            margin-bottom: 15px;
+            border-radius: 20px 20px 0 0;
+        }
+        .Zobens{
+            background-image: url('elden.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .Zive{
+            background-image: url('zive.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .karts a{
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+        }
+        .karts:hover{
+            background-color: rgb(10, 10, 10);
+            color:blueviolet;
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: all 1s ease;
+            
+        }
+ img {
+        border-radius: 50px;
+      }  
+      p{
+        font-size: larger;
+      }
+    </style>
+</head>
+<body>
+    <!-- Bildes izmērs šāds ir speciāls, jo tā izskatās smieklīgāk.-->  
+   
+    <img align="right" src="kpf.jpg" alt="Izlaiduma attēls" height="300" width="400">    
+    <h1> Kristers Patriks Feldbergs </h1>
+    <p> Gadi : 18</p>
+    <p> Garums 200 cm</p>
+    <p> Svars 90kg</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="flex-container">
+        <div class="karts">
+            <div class="karts-image Zobens"></div>
+            <h2>Spēcīgi vīri, ar lieliem zobeniem!</h2>
+            <a href="Zobeni.html"> <strong>Gribi zināt?</strong></a>
+        </div>
+        <div class="karts">
+            <div class="karts-image Zive"></div>
+            <h2>Zivis ar lielām asakām</h2>
+            <a href="Zives.html"> <b>Vai gardas?</b></a>
+        </div>
+        
+    </section>
+</body>
+</html>
